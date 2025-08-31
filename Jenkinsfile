@@ -75,7 +75,7 @@ pipeline {
         stage("Build Docker Image") {
             steps {
                 script {
-                    env.IMAGE_TAG = "kavya/amazon:${BUILD_NUMBER}"
+                    env.IMAGE_TAG = "pkavya555/amazon:${BUILD_NUMBER}"
 
                     // Optional cleanup
                     sh "docker rmi -f amazon ${env.IMAGE_TAG} || true"
